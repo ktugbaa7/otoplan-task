@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fire Sans', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar {
@@ -15,10 +15,11 @@
      
     &__logo1{
         margin-top: -40px;
+        z-index: 1;
     }
     
     &__menu{
-        width: 60%;  
+        width: 55%;  
     }
 
     &__menu1{
@@ -37,5 +38,66 @@
             padding-right: 20px;
             color: rgb(0, 0, 0);
         }
+    }
+}
+//Banner
+.banner{
+    img{
+        width: 100%;
+    }
+}
+
+//Main
+main{
+    background-color: rgb(243, 243, 243);
+    margin-top: -4px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    background-color: rgb(255, 255, 255);
+    height: 69px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.2px 3.95px 7px;
+
+    &__comment{
+        
+        p{
+            color: rgb(128, 128, 128);
+            font-size: 13px;
+            line-height: 17px;
+        }
+    }
+    button {
+        display: inline-block;
+        width: 150px;
+        height: 30px;
+        text-align: center;
+        border: none;
+        background-color: rgb(248, 136, 45);
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 91px;
+    }
+}   
+.box{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background-color: rgb(243, 243, 243);
+    margin: auto;
+    margin-top: 16px;
+    h1{
+        color: rgb(85, 85, 85);
+    }
+    a{
+        text-decoration: none;
+        font-size: 11px;
     }
 }

@@ -30,10 +30,9 @@ function NavBar() {
             </div>
             <div className="navbar__logo2">
                 <a href="">
-                    <img className="logo" src={logo2} alt="logo" />
+                    <img src={logo2} alt="logo" />
                 </a>
-            </div>
-
+            </div>  
         </div>
     );
 }

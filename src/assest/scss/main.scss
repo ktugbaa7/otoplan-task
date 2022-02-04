@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+//navbar
 .navbar {
     display: flex;
     justify-content: center;
@@ -51,6 +51,13 @@
 main{
     background-color: rgb(243, 243, 243);
     margin-top: -4px;
+
+    .card-body{
+        width: 65%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
 }
 .main{
     display: flex;
@@ -99,5 +106,105 @@ main{
     a{
         text-decoration: none;
         font-size: 11px;
+        color: black;
+    }
+}
+.main-sub{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    
+    img{
+        width: 50%;
+    }
+}
+//otocard
+.otocard{
+    width: 24%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;   
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.808);
+
+    img{
+        width: 100%;
+        height: 170px;
+        object-fit: contain;
+        padding-top: 30px;
+    }
+    &__body{
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid rgba(112, 112, 112, 0.342);
+
+        h5{
+            color: rgb(105, 105, 105);
+        }
+        p{
+            color: rgb(0, 0, 0);
+            font-size: 13px;
+        }
+    }
+    &__info{
+        padding: 10px;
+        p{
+            opacity: 0.5;
+        }
+    }
+
+    &__info2{
+        width: 100%;
+        background-color: rgba(167, 167, 167, 0.5);
+        padding: 10px;
+
+        p{
+            font-size: 13px;
+        }
+    }
+}
+//cardbot
+.cardbot{
+    width: 49.3%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;   
+    flex-wrap: wrap;
+    margin: 50px 0 10px;
+    border-bottom: 1.5px solid rgba(117, 117, 117, 0.808);
+    img{
+        width: 50%;
+        height: 140px;
+        object-fit: contain;
+    }
+    &__body{
+        width: 50%;
+        padding: 10px;
+
+        h5{
+            color: rgb(105, 105, 105);
+        }
+        p{
+            color: rgb(0, 0, 0);
+            font-size: 13px;
+        }
+    }       
+    &__info{
+        
+        p{
+            opacity: 0.5;
+        }
+    }
+    &__info2{
+        width: 100%;
+        background-color: rgba(167, 167, 167, 0.5);
+        padding: 10px;
+
+        p{
+            font-size: 13px;
+        }
     }
 }

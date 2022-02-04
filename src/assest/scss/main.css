@@ -63,6 +63,17 @@ main {
   margin-top: -4px;
 }
 
+main .card-body {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,5 +136,126 @@ main {
 .box a {
   text-decoration: none;
   font-size: 11px;
+  color: black;
+}
+
+.main-sub {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.main-sub img {
+  width: 50%;
+}
+
+.otocard {
+  width: 24%;
+  height: auto;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.808);
+}
+
+.otocard img {
+  width: 100%;
+  height: 170px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding-top: 30px;
+}
+
+.otocard__body {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.342);
+}
+
+.otocard__body h5 {
+  color: dimgray;
+}
+
+.otocard__body p {
+  color: black;
+  font-size: 13px;
+}
+
+.otocard__info {
+  padding: 10px;
+}
+
+.otocard__info p {
+  opacity: 0.5;
+}
+
+.otocard__info2 {
+  width: 100%;
+  background-color: rgba(167, 167, 167, 0.5);
+  padding: 10px;
+}
+
+.otocard__info2 p {
+  font-size: 13px;
+}
+
+.cardbot {
+  width: 49.3%;
+  height: auto;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px 0 10px;
+  border-bottom: 1.5px solid rgba(117, 117, 117, 0.808);
+}
+
+.cardbot img {
+  width: 50%;
+  height: 140px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cardbot__body {
+  width: 50%;
+  padding: 10px;
+}
+
+.cardbot__body h5 {
+  color: dimgray;
+}
+
+.cardbot__body p {
+  color: black;
+  font-size: 13px;
+}
+
+.cardbot__info p {
+  opacity: 0.5;
+}
+
+.cardbot__info2 {
+  width: 100%;
+  background-color: rgba(167, 167, 167, 0.5);
+  padding: 10px;
+}
+
+.cardbot__info2 p {
+  font-size: 13px;
 }
 /*# sourceMappingURL=main.css.map */

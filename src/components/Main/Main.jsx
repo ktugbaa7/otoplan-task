@@ -2,8 +2,12 @@ import React from 'react';
 import OtoCard from '../OtoCard/OtoCard';
 import OtoCardBot from '../OtoCardBot/OtoCardBot';
 import car_hero from '../../assest/scss/images1/car_hero.png'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 function Main(props) {
+  const rightIcon = <FontAwesomeIcon icon={faArrowRight} />
+
   return (
     <main>
       <div className="main">
@@ -16,7 +20,7 @@ function Main(props) {
       </div>
       <div className="box">
         <h1>Kampanyalar</h1>
-        <a href="">Tüm Kampanyaları Görüntüle</a>
+        <a href=""><span>{rightIcon}</span> Tüm Kampanyaları Görüntüle</a>
       </div>
       <div className="card-body">
         {props.carItems.map(oto => {
@@ -29,6 +33,9 @@ function Main(props) {
             km={oto.km}
             co={oto.co}
             imgSrc={oto.imgSrc}
+            p={oto.p}
+            number={oto.number}
+            a={oto.a}
           />
         })}
       </div>
@@ -43,13 +50,16 @@ function Main(props) {
             km={bot.km}
             co={bot.co}
             imgSrc={bot.imgSrc}
+            p={bot.p}
+            number={bot.number}
+            a={bot.a}
           />
         })}
       </div>
       <div className="main-sub">
         <img src={car_hero} alt="" />
         <div className="main-sub__sub">
-          <h3>Akıllı Planlar Oto Plan’da</h3>
+          <h2>Akıllı Planlar Oto Plan’da</h2>
           <h4>Operasyonel kiralamalarda sınırsız hizmeti tek fiyatla alın.</h4>
           <p>Her Şey Dahil Paketimiz; 0 Km Araçlar, Esnek Planlar, Genişletilmiş Kasko, Kış Lastiği Değişimi, Cezasız İade Koşulları, 7/24 Yol Yardım, Bakım ve Onarım Hizmeti, İkame Araç, 7/24 Yol Yardım Desteği, Çekici Hizmeti, Motorlu Taşıtlar Vergisi, Trafik Sigortası, Araç Muayenesi gibi Operasyonel Filo Kiralamanın bütün avantajlarını içermektedir.</p>
         </div>

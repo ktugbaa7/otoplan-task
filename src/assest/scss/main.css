@@ -61,6 +61,7 @@
 main {
   background-color: #f3f3f3;
   margin-top: -4px;
+  padding-bottom: 50px;
 }
 
 main .card-body {
@@ -139,6 +140,11 @@ main .card-body {
   color: black;
 }
 
+.box a span {
+  color: #f8882d;
+  font-size: 15px;
+}
+
 .main-sub {
   width: 65%;
   display: -webkit-box;
@@ -150,11 +156,34 @@ main .card-body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
+  position: relative;
+  margin: 40px auto 0;
+  background-color: white;
+  padding: 20px;
 }
 
 .main-sub img {
-  width: 50%;
+  width: 30%;
+}
+
+.main-sub__sub {
+  margin: 0 35px 0;
+}
+
+.main-sub__sub h2 {
+  color: #555555;
+}
+
+.main-sub__sub h4 {
+  color: #7e7e7e;
+  font-weight: normal;
+}
+
+.main-sub__sub p {
+  color: #7e7e7e;
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 18px;
 }
 
 .otocard {
@@ -195,10 +224,25 @@ main .card-body {
 
 .otocard__info {
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
 }
 
 .otocard__info p {
   opacity: 0.5;
+  font-size: 10px;
+  margin: 4px;
+}
+
+.otocard__info img {
+  width: auto;
+  height: auto;
+  padding-top: 8px;
 }
 
 .otocard__info2 {
@@ -207,8 +251,16 @@ main .card-body {
   padding: 10px;
 }
 
+.otocard__info2 a {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 11px;
+  color: dimgray;
+}
+
 .otocard__info2 p {
   font-size: 13px;
+  color: dimgray;
 }
 
 .cardbot {
@@ -220,7 +272,7 @@ main .card-body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 50px 0 10px;
+  margin: 40px 0 10px;
   border-bottom: 1.5px solid rgba(117, 117, 117, 0.808);
 }
 
@@ -229,6 +281,10 @@ main .card-body {
   height: 140px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.cardbot__name {
+  height: 40%;
 }
 
 .cardbot__body {
@@ -245,8 +301,27 @@ main .card-body {
   font-size: 13px;
 }
 
+.cardbot__info {
+  border-top: 1px solid #a5a5a52c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
 .cardbot__info p {
   opacity: 0.5;
+  font-size: 10px;
+  margin: 4px;
+}
+
+.cardbot__info img {
+  width: auto;
+  height: auto;
+  padding-top: 8px;
 }
 
 .cardbot__info2 {
@@ -255,7 +330,122 @@ main .card-body {
   padding: 10px;
 }
 
+.cardbot__info2 a {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 11px;
+  color: dimgray;
+}
+
 .cardbot__info2 p {
   font-size: 13px;
+  color: dimgray;
+}
+
+.footer {
+  background-color: #F9F8F6;
+  border-top: 2px solid rgba(1, 122, 7, 0.329);
+}
+
+.footer__container {
+  width: 65%;
+  margin: auto;
+}
+
+.footer__logo {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer__logo img {
+  width: 30%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: -110px;
+}
+
+.footer__logo p {
+  font-size: 12px;
+  color: #3f3f3f;
+}
+
+.footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__bodys {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0 20px;
+}
+
+.footer__bodys h5 {
+  color: #3f3f3f;
+}
+
+.footer__bodys li {
+  display: block;
+  line-height: 22px;
+}
+
+.footer__bodys a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #3f3f3f;
+}
+
+.footer__contact {
+  width: 50%;
+  margin: 20px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: right;
+}
+
+.footer__contact h5 {
+  color: rgba(63, 63, 63, 0.801);
+  font-weight: 1000;
+}
+
+.footer__contact h5 img {
+  height: 18px;
+  margin-bottom: -3px;
+}
+
+.footer__contact p {
+  font-size: 13px;
+  color: #3f3f3f;
+}
+
+.footer__contact h2 {
+  color: #f8882d;
+  font-weight: 1000;
 }
 /*# sourceMappingURL=main.css.map */

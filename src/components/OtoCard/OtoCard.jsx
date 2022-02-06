@@ -1,10 +1,12 @@
 import React from 'react';
-import gear from '../../assest/scss/images1/gear.png'
-import direction from '../../assest/scss/images1/direction.png'
 import gas from '../../assest/scss/images1/gas.png'
+import direction from '../../assest/scss/images1/direction.png'
+import gear from '../../assest/scss/images1/gear.png'
 import km from '../../assest/scss/images1/km.png'
 import co from '../../assest/scss/images1/co.png'
-
+// import { RiCarFill } from "react-icons/ri";
+// import { MdLocalGasStation } from "react-icons/md";
+// import { GiGearStick } from "react-icons/gi";
 
 function OtoCard(props) {
   return (

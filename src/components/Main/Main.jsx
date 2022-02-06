@@ -4,6 +4,8 @@ import OtoCardBot from '../OtoCardBot/OtoCardBot';
 import car_hero from '../../assest/scss/images1/car_hero.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight} from '@fortawesome/free-solid-svg-icons';
+import SearchBar from '../SearchBar/SearchBar';
+
 
 function Main(props) {
   const rightIcon = <FontAwesomeIcon icon={faArrowRight} />
@@ -14,9 +16,12 @@ function Main(props) {
         <div className="main__comment">
           <p><strong>Oto Plan</strong>, operasyonel filo kiralama sektörüne modern ve yenilikçi bir bakış açısı getiren vizyonu ile 2012 yılında kurulmuş,        üst yönetim kadrosunda alanının önde gelen isimlerini bir araya getirmiş, tamamen yerli sermayeli bir filo kiralama markasıdır.</p>
         </div>
-        <div className="main__button">
+        <span className="main__button">
           <button className="button" type="submit">Hakkımızda</button>
-        </div>
+        </span>
+      </div>
+      <div className="search-bar">
+        <SearchBar />
       </div>
       <div className="box">
         <h1>Kampanyalar</h1>

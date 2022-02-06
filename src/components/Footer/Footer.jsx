@@ -1,6 +1,12 @@
 import React from 'react';
-import LogoL from '../../assest/scss/images1/LogoL.png'
-import phone from '../../assest/scss/images1/phone.png'
+import LogoL from "../../assest/scss/images1/LogoL.png";
+import { FaYoutube } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { MdContactPhone} from "react-icons/md";
+
 
 function Footer() {
 
@@ -36,13 +42,22 @@ function Footer() {
           </div>
           <div className="footer__contact">
             <div>
-              <h5>OTO PLAN <img src={phone}/></h5>
+              <span>
+                <h5>OTO PLAN</h5> 
+                <MdContactPhone />
+              </span>
               <p>Müşteri Destek Hattı</p>
               <h2>444 5 OTO</h2>
+              <div className="footer__socials">
+                <a href="" className="footer__fa"><FaFacebook /></a>
+                <a href="" className="fa"><FaTwitter /></a>
+                <a href="" className="fa"><FaInstagram /></a>
+                <a href="" className="fa"><FaLinkedin /></a>
+                <a href="" className="fa"><FaYoutube /></a>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

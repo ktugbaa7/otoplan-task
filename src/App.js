@@ -10,7 +10,6 @@ import car3 from './assest/scss/images1/car3.png'
 import car4 from './assest/scss/images1/car4.png'
 import car5 from './assest/scss/images1/car5.png'
 import car6 from './assest/scss/images1/car6.png'
-import SearchBar from './components/SearchBar/SearchBar';
 
 function App() {
   const [car, setCar] = useState([

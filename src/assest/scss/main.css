@@ -31,7 +31,11 @@
 }
 
 .navbar__menu1 {
-  font-size: 13px;
+  font-size: 12px;
+}
+
+.navbar__menu2 {
+  font-size: 15px;
 }
 
 .navbar nav {
@@ -58,6 +62,15 @@
   color: #f8882d;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__logo1 {
+    display: none;
+  }
+  .navbar a {
+    font-size: 12px;
+  }
 }
 
 .banner img {
@@ -99,12 +112,17 @@ main .card-body {
       -ms-flex-align: center;
           align-items: center;
   width: 65%;
+  max-width: 1200px;
   background-color: white;
-  height: 69px;
-  padding: 20px;
+  height: auto;
+  padding: 15px;
   margin: auto;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.2px 3.95px 7px;
           box-shadow: rgba(0, 0, 0, 0.15) 1.2px 3.95px 7px;
+}
+
+.main__comment {
+  margin-right: 30px;
 }
 
 .main__comment p {
@@ -122,7 +140,6 @@ main .card-body {
   color: #fff;
   font-size: 14px;
   font-weight: bold;
-  margin-left: 91px;
   cursor: pointer;
 }
 
@@ -200,9 +217,86 @@ main .card-body {
   line-height: 18px;
 }
 
+@media screen and (max-width: 1052px) {
+  main .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .card-body .otocard {
+    width: 100%;
+  }
+  main .card-body .otocard p {
+    margin-right: 10px;
+  }
+  main .card-body .cardbot {
+    width: 100%;
+  }
+  main .card-body .cardbot__name {
+    height: 30%;
+  }
+  main .card-body .cardbot__info {
+    max-height: 60%;
+  }
+  main .card-body .cardbot p {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 80%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main__comment {
+    width: 100%;
+    margin: auto;
+  }
+  .main__comment p {
+    font-size: 12px;
+  }
+  .main__button {
+    background-color: #858585;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5px;
+  }
+  .box {
+    width: 80%;
+  }
+  main .card-body {
+    width: 80%;
+  }
+  main .main-sub {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .main-sub img {
+    width: 60%;
+  }
+  main .main-sub__sub {
+    margin-top: 5px;
+  }
+}
+
 .searchbar {
   width: 65%;
-  height: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,6 +325,10 @@ main .card-body {
   color: #A6A6A6;
 }
 
+.searchbar__one {
+  width: 14%;
+}
+
 .searchbar button {
   background-color: #f8882d;
   border: none;
@@ -246,6 +344,35 @@ main .card-body {
 
 .searchbar button:hover {
   background-color: #eb812b;
+}
+
+@media screen and (max-width: 768px) {
+  .searchbar {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .searchbar__options {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .searchbar__cars {
+    width: 30%;
+    margin-bottom: 5px;
+  }
 }
 
 .otocard {
@@ -298,7 +425,7 @@ main .card-body {
 .otocard__info p {
   opacity: 0.5;
   font-size: 10px;
-  margin: 4px;
+  margin-top: 4px;
 }
 
 .otocard__info img {
@@ -340,13 +467,13 @@ main .card-body {
 
 .cardbot img {
   width: 50%;
-  height: 140px;
+  height: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
 .cardbot__name {
-  height: 40%;
+  height: auto;
 }
 
 .cardbot__body {
@@ -451,7 +578,7 @@ main .card-body {
 }
 
 .footer__bodys {
-  width: 50%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,5 +659,50 @@ main .card-body {
 .footer__socials a {
   color: white;
   font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+  }
+  .footer__container {
+    width: 100%;
+  }
+  .footer__logo {
+    width: 100%;
+  }
+  .footer img {
+    margin-left: 15px;
+  }
+  .footer__body {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__bodys {
+    width: 80%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__contact {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

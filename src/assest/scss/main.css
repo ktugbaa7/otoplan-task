@@ -73,21 +73,19 @@
   }
 }
 
+.banne {
+  padding-bottom: 20px;
+  background-color: #F8F7F6;
+}
+
 .banner img {
   width: 100%;
 }
 
 main {
-  background-color: #F8F7F6;
   margin-top: -4px;
   padding-bottom: 50px;
-}
-
-main .search-bar {
-  width: 100%;
-  margin-top: 15px;
-  padding: 15px 0;
-  background-color: #e6e5e4;
+  background-color: #F8F7F6;
 }
 
 main .card-body {
@@ -99,6 +97,12 @@ main .card-body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: auto;
+}
+
+.title {
+  width: 100%;
+  background-color: #F8F7F6;
+  margin-top: -4px;
 }
 
 .main {
@@ -295,8 +299,25 @@ main .card-body {
 }
 
 .searchbar {
-  width: 65%;
+  width: 100%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  margin-bottom: -16px;
+  background-color: #d3d3d3;
+}
+
+.searchbar__container {
+  width: 65%;
+  height: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,7 +327,6 @@ main .card-body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
 }
 
 .searchbar__options {
@@ -320,13 +340,15 @@ main .card-body {
 }
 
 .searchbar__cars {
-  padding: 7px 17px 7px 0px;
+  width: 100px;
+  height: 38px;
   border-color: #858585;
   color: #A6A6A6;
 }
 
 .searchbar__one {
-  width: 14%;
+  width: 20%;
+  margin-right: -60px;
 }
 
 .searchbar button {
@@ -346,9 +368,13 @@ main .card-body {
   background-color: #eb812b;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 879px) {
   .searchbar {
-    width: 90%;
+    width: 100%;
+  }
+  .searchbar__container {
+    width: 65%;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -365,13 +391,13 @@ main .card-body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .searchbar__cars {
-    width: 30%;
+    width: 32%;
     margin-bottom: 5px;
+  }
+  .searchbar__one {
+    margin: auto;
   }
 }
 

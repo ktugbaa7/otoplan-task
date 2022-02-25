@@ -59,6 +59,10 @@
     }
 }
 //Banner
+.banne{
+    padding-bottom: 20px;
+    background-color: #F8F7F6;
+}
 .banner{
     img{
         width: 100%;
@@ -67,17 +71,9 @@
 
 //Main
 main{
-    background-color: #F8F7F6;
     margin-top: -4px;
     padding-bottom: 50px;
-    
-
-    .search-bar{
-        width: 100%;
-        margin-top: 15px;
-        padding: 15px 0;
-        background-color: #e6e5e4;
-    }
+    background-color: #F8F7F6;
 
     .card-body{
         width: 65%;
@@ -85,6 +81,11 @@ main{
         justify-content: space-between;
         margin: auto;
     }
+}
+.title{
+    width: 100%;
+    background-color: #F8F7F6;
+    margin-top: -4px;
 }
 .main{
     display: flex;
@@ -97,7 +98,7 @@ main{
     padding:15px;
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.15) 1.2px 3.95px 7px;
-
+    
     &__comment{
         margin-right: 30px;
         p{
@@ -240,15 +241,24 @@ main{
         }
     }
 }
-
 //searchbar
 .searchbar{
-    width: 65%;
+    width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: auto;
+    margin-bottom: -16px;
+    background-color: #d3d3d3;
+
+    &__container{
+        width: 65%;
+        height: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     &__options{
         width: 80%;
@@ -256,12 +266,14 @@ main{
         justify-content: space-between;
     }
     &__cars{
-        padding: 7px 17px 7px 0px;
+        width: 100px;
+        height: 38px;
         border-color: #858585;
         color: #A6A6A6;
     }
     &__one{
-        width: 14%;
+        width: 20%;
+        margin-right: -60px;
     }
     button{
         background-color: rgb(248, 136, 45); 
@@ -279,25 +291,28 @@ main{
         background-color: rgb(235, 129, 43);
     }
 }
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 879px){
     .searchbar{
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        width: 100%;
+
+        &__container{
+            width: 65%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         &__options{
             width: 100%;
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
+            flex-wrap: wrap;   
         } 
         &__cars{
-            width: 30%;
+            width: 32%;
             margin-bottom: 5px;
         }
         &__one{
-
+            margin: auto;
         }
     }
 }
@@ -336,7 +351,6 @@ main{
         justify-content: space-around;
         flex-flow: wrap;
         
-        
         p{
             opacity: 0.5;
             font-size: 10px;
@@ -366,7 +380,6 @@ main{
         }
     }
 }
-
 //cardbot
 .cardbot{
     width: 49.3%;

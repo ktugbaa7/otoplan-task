@@ -83,7 +83,7 @@
 }
 
 main {
-  margin-top: -4px;
+  margin-top: -16px;
   padding-bottom: 50px;
   background-color: #F8F7F6;
 }
@@ -313,6 +313,10 @@ main .card-body {
   margin: auto;
   margin-bottom: -16px;
   background-color: #d3d3d3;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
 }
 
 .searchbar__container {
@@ -373,7 +377,7 @@ main .card-body {
     width: 100%;
   }
   .searchbar__container {
-    width: 65%;
+    width: 80%;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;

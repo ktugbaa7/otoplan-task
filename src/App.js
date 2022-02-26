@@ -95,6 +95,13 @@ function App() {
 
   ])
   const [brand, setBrand] = useState([]);
+  const [model, setModel] = useState([]);
+  const [geartype, setGearType] = useState([]);
+  const [fueltype, setFuelType] = useState([]);
+  const [bodytype, setBodyType] = useState([]);
+  const [web, setWeb] = useState([]);
+  const [slider, setSlider] = useState([]);
+
   useEffect(() => {
     fetch("https://otpapidev.komut.team:1471/api/car/definitions/brand")
       .then(response => {
@@ -103,7 +110,15 @@ function App() {
       .then(response => setBrand(response.Result));
   }, []);
 
-  const [model, setModel] = useState([]);
+  const handleBrandChange = (e) => {
+    if (e.target.value != null) {
+      fetch(`https://otpapidev.komut.team:1471/api/car/definitions/brand/${e.target.value}`)
+        .then(response => {
+          return response.json()
+        })
+        .then(response => setModel(response.Result.CarModels));
+    }
+  }
   useEffect(() => {
     fetch("https://otpapidev.komut.team:1471/api/car/definitions/model")
       .then(response => {
@@ -111,8 +126,7 @@ function App() {
       })
       .then(response => setModel(response.Result));
   }, []);
-  
-  const [geartype, setGearType] = useState([]);
+
   useEffect(() => {
     fetch("https://otpapidev.komut.team:1471/api/car/definitions/geartype")
       .then(response => {
@@ -120,8 +134,7 @@ function App() {
       })
       .then(response => setGearType(response.Result));
   }, []);
-  
-  const [fueltype, setFuelType] = useState([]);
+
   useEffect(() => {
     fetch("https://otpapidev.komut.team:1471/api/car/definitions/fueltype")
       .then(response => {
@@ -129,8 +142,7 @@ function App() {
       })
       .then(response => setFuelType(response.Result));
   }, []);
-  
-  const [bodytype, setBodyType] = useState([]);
+
   useEffect(() => {
     fetch("https://otpapidev.komut.team:1471/api/car/definitions/bodytype")
       .then(response => {
@@ -138,8 +150,7 @@ function App() {
       })
       .then(response => setBodyType(response.Result));
   }, []);
-  
-  const [web, setWeb] = useState([]);
+
   useEffect(() => {
     fetch("https://otpapidev.komut.team:1471/api/car/web")
       .then(response => {
@@ -148,31 +159,30 @@ function App() {
       .then(response => setWeb(response.Result));
   }, []);
 
-  const [slider, setSlider] = useState([]);
-  console.log(slider);
-  useEffect(() =>{
+  useEffect(() => {
     fetch("https://otpapidev.komut.team:1471/api/definitions/slider")
-    .then(response => {
-      return response.json()
-    })
-    .then(response => setSlider(response.Result));
+      .then(response => {
+        return response.json()
+      })
+      .then(response => setSlider(response.Result));
   }, []);
   // 
   return (
     <div className="App">
       <NavBar />
       <Banner />
-      <SearchBar 
-      brand={brand} 
-      model={model} 
-      geartype={geartype} 
-      fueltype={fueltype} 
-      bodytype={bodytype}
-      web={web}
-      slider={slider}
-      />
-      <Main carItems={car} carBotItems={carBot}/>
+      <Main carItems={car} carBotItems={carBot} />
       <Footer />
+      <SearchBar
+        brand={brand}
+        setBrand={handleBrandChange}
+        model={model}
+        geartype={geartype}
+        fueltype={fueltype}
+        bodytype={bodytype}
+        web={web}
+        slider={slider}
+      />
     </div>
   );
 }

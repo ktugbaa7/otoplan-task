@@ -6,10 +6,10 @@ function SearchBar(props) {
         <div className="searchbar">
             <div className="searchbar__container">
                 <div className="searchbar__options">
-                    <select className="searchbar__cars" id="cars">
+                    <select className="searchbar__cars" id="cars" onChange={props.setBrand}>
                         {props.brand?.map((brand) => {
                             return (
-                                <option value="marka">{brand.BrandName}</option>
+                                <option value={brand.Id}>{brand.BrandName}</option>
                             )
                         })}
                     </select>
